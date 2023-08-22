@@ -1,0 +1,1 @@
+example scraper for "nöbetçi eczane" from edevlet. 

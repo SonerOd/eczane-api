@@ -1,0 +1,15 @@
+{
+    "name": "od/eczaneapi",
+    "autoload": {
+        "psr-4": {
+            "Od\\EczaneApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "WWoo",
+            "email": "info@sonerodabas.com"
+        }
+    ],
+    "require": {}
+}
