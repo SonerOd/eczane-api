@@ -1,7 +1,5 @@
 <?php
 
-namespace Od\EczaneApi;
-
 class EDevlet
 {
     protected $scraper;
@@ -14,7 +12,7 @@ class EDevlet
 
     public function __construct()
     {
-        $this->scraper = new Scraper();
+        $this->scraper = new \Scraper();
     }
     public function getDataBySelections($cityCode, $date) {
         $this->scraper = $this->scraper->setUrl($this->url);

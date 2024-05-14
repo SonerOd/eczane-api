@@ -1,7 +1,5 @@
 <?php
 
-namespace Od\EczaneApi;
-
 class Scraper
 {
     /** @var \DOMDocument */
@@ -103,7 +101,7 @@ class Scraper
                 'name' => trim($node->childNodes[1]->nodeValue),
                 'district' => trim($node->childNodes[3]->nodeValue),
                 'address' => trim($node->childNodes[7]->nodeValue),
-                'phone' => trim($node->childNodes[5]->nodeValue),
+                'phone' => preg_replace('/\D/', '', trim($node->childNodes[5]->nodeValue)),
             ];
             $table[] = $row;
         }
