@@ -64,7 +64,6 @@ class EDevlet
             ),
         ));
         $response = curl_exec($curl);
-        curl_close($curl);
         return $response;
     }
 }
